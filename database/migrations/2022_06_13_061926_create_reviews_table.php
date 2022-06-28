@@ -18,7 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('product_id');
             $table->string('customer');
             $table->text('review');
-            $table->integer('start');
+            $table->integer('star');
             $table->foreign('product_id')
                     ->references('id')
                     ->on('products')
